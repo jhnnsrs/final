@@ -1,10 +1,10 @@
 builds:
-- build_id: a1dbb376-38fd-4057-a2cf-6e161010a20f
-  build_run: 92a016e6-6db0-4312-8cbf-1a3b2f531144
+- build_id: 780e771f-44e3-4d86-8f28-4d8e355a0c9e
+  build_run: 320402d2-e1a8-4dd8-8b03-0b341cd73840
   description: This is a vanilla flavour
   flavour: vanilla
   inspection:
-    size: 507143228
+    size: 507229381
     templates:
     - definition:
         args:
@@ -103,4 +103,4 @@ builds:
     - read
     version: 0.0.1
   selectors: []
-latest_build_run: 92a016e6-6db0-4312-8cbf-1a3b2f531144
+latest_build_run: 320402d2-e1a8-4dd8-8b03-0b341cd73840

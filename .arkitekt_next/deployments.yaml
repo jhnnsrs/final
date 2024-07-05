@@ -1,12 +1,12 @@
 deployments:
-- build_id: a1dbb376-38fd-4057-a2cf-6e161010a20f
-  deployed_at: '2024-07-05T14:59:49.000622'
-  deployment_id: aeb91021-a249-4372-8009-27e3c4b7c6c4
-  deployment_run: 69afb8fc-88d9-4964-ad62-08533cc878e0
+- build_id: 780e771f-44e3-4d86-8f28-4d8e355a0c9e
+  deployed_at: '2024-07-05T16:51:39.729819'
+  deployment_id: 2663bf2c-1c62-4031-b4f5-9056dd304ee8
+  deployment_run: f3c01995-6c5f-4937-9676-0d0f580ec45b
   flavour: vanilla
   image: jhnnsrs/final:0.0.1-vanilla
   inspection:
-    size: 507143228
+    size: 507229381
     templates:
     - definition:
         args:
@@ -98,7 +98,7 @@ deployments:
       interface: print_string
   manifest:
     author: jhnnsrs
-    created_at: '2024-07-05T14:59:18.212800'
+    created_at: '2024-07-05T16:51:10.265078'
     entrypoint: app
     identifier: final
     requirements: []
@@ -106,4 +106,4 @@ deployments:
     - read
     version: 0.0.1
   selectors: []
-latest_deployment_run: 6445cd79-5083-4732-9c55-633e1f211b22
+latest_deployment_run: fd4d74a8-073c-4597-b9ad-51ab57f6489f

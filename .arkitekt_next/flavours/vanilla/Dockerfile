@@ -1,6 +1,6 @@
 FROM python:3.11-slim-buster
 
-RUN pip install "arkitekt-next[all]>=0.7.17"
+RUN pip install "arkitekt-next[all]>=0.7.19"
 
 RUN mkdir /app
 WORKDIR /app
