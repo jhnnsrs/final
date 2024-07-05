@@ -1,0 +1,106 @@
+builds:
+- build_id: a1dbb376-38fd-4057-a2cf-6e161010a20f
+  build_run: 92a016e6-6db0-4312-8cbf-1a3b2f531144
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    size: 507143228
+    templates:
+    - definition:
+        args:
+        - default: 10
+          description: The number of iterations, by default 10
+          key: n
+          kind: INT
+          label: n
+          nullable: true
+          scope: GLOBAL
+        - default: 2
+          description: The timeout, by default 2
+          key: timeout
+          kind: INT
+          label: timeout
+          nullable: true
+          scope: GLOBAL
+        collections: []
+        description: This function generates {{n}} strings with a {{timeout}} ms timeout
+          between each string
+        interfaces: []
+        isDev: false
+        isTestFor: []
+        kind: GENERATOR
+        name: Generate N Strings
+        portGroups: []
+        returns:
+        - description: A string with Hello {n}
+          key: return0
+          kind: STRING
+          nullable: false
+          scope: GLOBAL
+      dependencies: []
+      dynamic: false
+      interface: generate_n_string
+    - definition:
+        args:
+        - description: The input string
+          key: hello
+          kind: STRING
+          label: hello
+          nullable: false
+          scope: GLOBAL
+        collections: []
+        description: This function appends world to the input string
+        interfaces: []
+        isDev: false
+        isTestFor: []
+        kind: FUNCTION
+        name: Append World
+        portGroups: []
+        returns:
+        - description: '{{hello}} World'
+          key: return0
+          kind: STRING
+          nullable: false
+          scope: GLOBAL
+      dependencies: []
+      dynamic: false
+      interface: append_world
+    - definition:
+        args:
+        - description: 'The input string
+
+
+            Returns'
+          key: input
+          kind: STRING
+          label: input
+          nullable: false
+          scope: GLOBAL
+        collections: []
+        description: 'This function prints the input string to
+
+          the console'
+        interfaces: []
+        isDev: false
+        isTestFor: []
+        kind: FUNCTION
+        name: Print String
+        portGroups: []
+        returns:
+        - key: return0
+          kind: STRING
+          nullable: false
+          scope: GLOBAL
+      dependencies: []
+      dynamic: false
+      interface: print_string
+  manifest:
+    author: jhnnsrs
+    entrypoint: app
+    identifier: final
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+latest_build_run: 92a016e6-6db0-4312-8cbf-1a3b2f531144
