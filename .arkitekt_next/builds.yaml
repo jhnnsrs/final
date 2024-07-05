@@ -1,9 +1,40 @@
 builds:
-- build_id: 780e771f-44e3-4d86-8f28-4d8e355a0c9e
-  build_run: 320402d2-e1a8-4dd8-8b03-0b341cd73840
+- build_id: 7c1d0a68-e5a5-4337-8111-1d2390f9a3a4
+  build_run: 034553c4-86c4-4f85-9d57-9361d9cd2a96
   description: This is a vanilla flavour
   flavour: vanilla
   inspection:
+    requirements:
+      datalayer:
+        description: An instance of ArkitektNext Datalayer to make requests to the
+          user's data
+        optional: true
+        service: live.arkitekt.datalayer
+      fluss:
+        description: An instance of ArkitektNext fluss to retrieve graphs from
+        optional: false
+        service: live.arkitekt.fluss
+      kabinet:
+        description: An instance of ArkitektNext Kabinet to retrieve nodes from
+        optional: false
+        service: live.arkitekt.kabinet
+      lok:
+        description: An instance of ArkitektNext Lok to authenticate the user
+        optional: false
+        service: live.arkitekt.lok
+      mikro:
+        description: An instance of ArkitektNext Mikro to make requests to the user's
+          data
+        optional: true
+        service: live.arkitekt.mikro
+      rekuest:
+        description: An instance of ArkitektNext Rekuest to assign to nodes
+        optional: false
+        service: live.arkitekt.rekuest
+      unlok:
+        description: An instance of ArkitektNext Lok to authenticate the user
+        optional: false
+        service: live.arkitekt.lok
     size: 507229381
     templates:
     - definition:
@@ -98,9 +129,8 @@ builds:
     author: jhnnsrs
     entrypoint: app
     identifier: final
-    requirements: []
     scopes:
     - read
     version: 0.0.1
   selectors: []
-latest_build_run: 320402d2-e1a8-4dd8-8b03-0b341cd73840
+latest_build_run: 034553c4-86c4-4f85-9d57-9361d9cd2a96

@@ -1,11 +1,42 @@
 deployments:
-- build_id: 780e771f-44e3-4d86-8f28-4d8e355a0c9e
-  deployed_at: '2024-07-05T16:51:39.729819'
-  deployment_id: 2663bf2c-1c62-4031-b4f5-9056dd304ee8
-  deployment_run: f3c01995-6c5f-4937-9676-0d0f580ec45b
+- build_id: 7c1d0a68-e5a5-4337-8111-1d2390f9a3a4
+  deployed_at: '2024-07-05T16:56:37.515038'
+  deployment_id: 77ae0d16-14d1-478d-a47d-97d5ba049d7a
+  deployment_run: eece5ecc-b21d-45b5-8945-69be3fa8f9f1
   flavour: vanilla
   image: jhnnsrs/final:0.0.1-vanilla
   inspection:
+    requirements:
+      datalayer:
+        description: An instance of ArkitektNext Datalayer to make requests to the
+          user's data
+        optional: true
+        service: live.arkitekt.datalayer
+      fluss:
+        description: An instance of ArkitektNext fluss to retrieve graphs from
+        optional: false
+        service: live.arkitekt.fluss
+      kabinet:
+        description: An instance of ArkitektNext Kabinet to retrieve nodes from
+        optional: false
+        service: live.arkitekt.kabinet
+      lok:
+        description: An instance of ArkitektNext Lok to authenticate the user
+        optional: false
+        service: live.arkitekt.lok
+      mikro:
+        description: An instance of ArkitektNext Mikro to make requests to the user's
+          data
+        optional: true
+        service: live.arkitekt.mikro
+      rekuest:
+        description: An instance of ArkitektNext Rekuest to assign to nodes
+        optional: false
+        service: live.arkitekt.rekuest
+      unlok:
+        description: An instance of ArkitektNext Lok to authenticate the user
+        optional: false
+        service: live.arkitekt.lok
     size: 507229381
     templates:
     - definition:
@@ -98,12 +129,11 @@ deployments:
       interface: print_string
   manifest:
     author: jhnnsrs
-    created_at: '2024-07-05T16:51:10.265078'
+    created_at: '2024-07-05T16:56:33.596563'
     entrypoint: app
     identifier: final
-    requirements: []
     scopes:
     - read
     version: 0.0.1
   selectors: []
-latest_deployment_run: fd4d74a8-073c-4597-b9ad-51ab57f6489f
+latest_deployment_run: 4850d2e2-af2d-42da-b468-295c143a50c6
